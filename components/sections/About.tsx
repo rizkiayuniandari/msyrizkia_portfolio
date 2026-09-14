@@ -1,3 +1,4 @@
+import Image from "next/image";
 import GlassCard from "@/components/ui/GlassCard";
 import SectionTitle from "@/components/ui/SectionTitle";
 import GradientOrb from "@/components/ui/GradientOrb";
@@ -17,21 +18,32 @@ export default function About() {
           title="Identitas Diri."
         />
 
-        <GlassCard className="p-8 md:p-12">
+        <GlassCard className="p-6 md:p-8">
           <div className="grid gap-8 md:grid-cols-[0.25fr_1fr]">
             <div>
-              <span className="text-sm font-semibold uppercase tracking-widest text-pink-600">
+              <div className="relative mx-auto mb-6 h-64 w-64 md:mx-0">
+                <Image
+                  src="/1.png"
+                  alt={personalInfo.name}
+                  fill
+                  className="object-contain"
+                />
+              </div>
+
+              <span className="block text-center text-sm font-semibold uppercase tracking-widest text-pink-600 md:text-left">
                 Halo Perkenalkan Saya
               </span>
 
-              <h3 className="mt-3 font-serif text-3xl text-slate-800">
+              <h3 className="mt-3 text-center font-serif text-3xl text-slate-800 md:text-left">
                 {personalInfo.name}
               </h3>
             </div>
 
-            <p className="text-lg leading-8 text-slate-600 md:text-xl">
-              {about.description}
-            </p>
+            <div className="flex h-full items-center">
+              <p className="text-lg leading-8 text-slate-600 md:text-xl">
+                {about.description}
+              </p>
+            </div>
           </div>
         </GlassCard>
       </div>
