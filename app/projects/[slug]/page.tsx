@@ -265,82 +265,40 @@ export default async function ProjectPage({
 
                 {slug === "project-1" ? (
 
-                  <>
-                    {/* =========================
-                        PROJECT 1
-                        MOBILE / HP
-                        5 ATAS
-                    ========================= */}
+                  /* Menggabungkan seluruh gambar menjadi 1 Grid agar menyatu tanpa jeda */
+                  <div className="mt-8 grid grid-cols-2 gap-5 sm:grid-cols-3 md:grid-cols-5">
 
-                    <div className="mt-8 grid grid-cols-2 gap-5 sm:grid-cols-3 md:grid-cols-5">
+                    {project.prototype.images.map((image, index) => (
 
-                      {project.prototype.images
-                        .slice(0, 5)
-                        .map((image, index) => (
+                      <div
+                        key={image}
+                        className={`group overflow-hidden rounded-3xl border border-white/40 bg-white/20 ${
+                          index === 5 ? "md:col-start-2" : ""
+                        }`}
+                      >
 
-                          <div
-                            key={image}
-                            className="group overflow-hidden rounded-3xl border border-white/40 bg-white/20"
-                          >
+                        <div className="relative aspect-[9/16]">
 
-                            <div className="relative aspect-[9/16]">
+                          <Image
+                            src={image}
+                            alt={`${project.title} prototype ${index + 1}`}
+                            fill
+                            className="object-cover transition duration-500 group-hover:scale-105"
+                          />
 
-                              <Image
-                                src={image}
-                                alt={`${project.title} prototype ${index + 1}`}
-                                fill
-                                className="object-cover transition duration-500 group-hover:scale-105"
-                              />
+                        </div>
 
-                            </div>
+                      </div>
 
-                          </div>
+                    ))}
 
-                        ))}
-
-                    </div>
-
-
-                    {/* =========================
-                        PROJECT 1
-                        MOBILE / HP
-                        3 BAWAH
-                    ========================= */}
-
-                    <div className="mt-5 flex justify-center gap-5">
-
-                      {project.prototype.images
-                        .slice(5, 8)
-                        .map((image, index) => (
-
-                          <div
-                            key={image}
-                            className="group w-[calc(20%-20px)] max-w-[190px] overflow-hidden rounded-3xl border border-white/40 bg-white/20"
-                          >
-
-                            <div className="relative aspect-[9/16]">
-
-                              <Image
-                                src={image}
-                                alt={`${project.title} prototype ${index + 6}`}
-                                fill
-                                className="object-cover transition duration-500 group-hover:scale-105"
-                              />
-
-                            </div>
-
-                          </div>
-
-                        ))}
-
-                    </div>
-                  </>
+                  </div>
 
                 ) : (
 
                   /* =========================
-                     PROJECT 2, 3, 4, 5
-                     DESKTOP
+                      PROJECT 2, 3, 4, 5
+                      DESKTOP
                   ========================= */
 
                   <div className="mt-8 grid gap-5 md:grid-cols-2">
