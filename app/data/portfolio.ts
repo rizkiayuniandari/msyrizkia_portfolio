@@ -148,7 +148,7 @@ export const projects = [
     description:
       "Membangun website Admin CRM yang dilengkapi peta interaktif untuk memvisualisasikan sebaran perangkat Venambak di seluruh Indonesia. Platform ini juga mencakup dashboard analitik penjualan, pengelolaan data pelanggan (CRUD), serta pencatatan riwayat pesanan secara lengkap guna mendukung pengelolaan data pelanggan dan pemantauan transaksi.",
 
-    role: "Frontend Engineer Intern",
+    role: "Frontend Engineer",
 
     category:
       "Intern Project at PT. Venambak Kail Dipantara",
@@ -156,8 +156,7 @@ export const projects = [
     responsibilities: [
       "Merancang UI/UX responsif untuk website Admin CRM guna memastikan pengalaman pengguna yang optimal, baik pada perangkat desktop maupun mobile.",
       "Mengimplementasikan desain antarmuka menggunakan Next.js dan TypeScript.",
-      "Menerapkan fungsi CRUD untuk mendukung pengelolaan data secara efisien.",
-      "Mengintegrasikan REST API untuk mengelola data pelanggan, mencakup proses pembuatan, pengambilan, pembaruan, dan penghapusan data.",
+      "Mengintegrasikan REST API untuk mendukung operasi CRUD (Create, Read, Update, Delete) dalam pengelolaan data pelanggan.",
       "Melakukan debugging, troubleshooting, dan optimasi performa guna menjaga stabilitas dan keandalan aplikasi.",
       "Membantu proses deployment serta troubleshooting sisi server untuk mendukung rilis ke tahap produksi.",
     ],
@@ -197,7 +196,7 @@ export const projects = [
     description:
       "Mengembangkan dashboard monitoring IoT berbasis web untuk manajemen perangkat secara real-time. Platform ini memungkinkan pengguna untuk memantau berbagai perangkat, melihat status online/offline, mengendalikan perangkat dari jarak jauh, mengatur jadwal operasional, serta memantau data spesifik dari masing-masing perangkat. Perangkat Venjet menampilkan data konsumsi energi, sementara perangkat Sensor menyediakan parameter kualitas air secara real-time, meliputi pH, suhu, salinitas, ORP, DO, dan TDS.",
 
-    role: "Frontend Engineer Intern",
+    role: "Frontend Engineer",
 
     category:
       "Intern Project at PT. Venambak Kail Dipantara",
@@ -205,6 +204,7 @@ export const projects = [
     responsibilities: [
       "Merancang UI/UX responsif guna memastikan pengalaman pengguna yang optimal, baik pada perangkat desktop maupun mobile.",
       "Mengimplementasikan desain antarmuka menggunakan Next.js dan TypeScript.",
+      "Mengimplementasikan fitur RBAC untuk mengelola dan membedakan hak akses antara Superadmin, Admin dan Viewer.",
       "Mengintegrasikan REST API, MQTT, dan WebSocket untuk mendukung komunikasi data secara real-time serta pemantauan perangkat.",
       "Melakukan debugging, troubleshooting, dan optimasi performa guna menjaga stabilitas dan keandalan aplikasi.",
     ],
@@ -242,7 +242,7 @@ export const projects = [
     description:
       "Mengembangkan dan mengimplementasikan website company profile yang responsif menggunakan Next.js dan TypeScript, menghadirkan tampilan modern dan mudah digunakan pada perangkat desktop maupun mobile. Membangun dan mengoptimalkan halaman-halaman utama, termasuk Products, Services, Media, Gallery, Careers, dan Team, serta bekerja sama secara langsung dengan tim konten untuk memastikan integrasi konten yang akurat, konsistensi desain, dan pengalaman pengguna yang intuitif.",
 
-    role: "Frontend Engineer Intern",
+    role: "Frontend Engineer",
 
     category:
       "Intern Project at PT. Venambak Kail Dipantara",
