@@ -65,9 +65,9 @@ export default function Hero() {
           <div className="rounded-[3rem] border border-white/40 bg-white/20 p-5 backdrop-blur-xl">
             <div className="aspect-[4/5] overflow-hidden rounded-[2.5rem] bg-white/20">
               <img
-                src="/msy-rizkia.jpg"
+                src="/professional.jpeg"
                 alt={personalInfo.name}
-                className="h-full w-full object-cover object-bottom scale-100"
+                className="h-full w-full object-cover object-[center_70%] scale-100"
               />
             </div>
           </div>

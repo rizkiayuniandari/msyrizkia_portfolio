@@ -72,11 +72,12 @@ export const projects = [
       "Membuat dan mengelola basis data serta layanan penyimpanan.",
       "Melakukan deployment model machine learning menggunakan Vertex AI dan NodeJS untuk membangun API endpoint.",
       "Mengelola layanan logging, monitoring, dan alerting.",
+      "Melakukan diskusi dan review bersama tim untuk memastikan fitur berjalan sesuai kebutuhan.",
     ],
 
     collaboration: [
-      "Berkolaborasi dengan Machine Learning Cohort dan Mobile Development Cohort.",
-      "Melakukan diskusi dan review bersama tim untuk memastikan fitur berjalan sesuai kebutuhan.",
+      "Mobile Development Cohort.",
+      "Machine Learning Cohort",
     ],
 
     prototype: {
@@ -118,8 +119,6 @@ export const projects = [
     ],
 
     collaboration: [
-      "Berkolaborasi dengan tim dalam proses pengembangan website.",
-      "Melakukan diskusi dan review untuk memastikan tampilan website sesuai dengan mockup.",
     ],
 
     prototype: {

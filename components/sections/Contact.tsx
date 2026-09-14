@@ -45,7 +45,7 @@ export default function Contact() {
         <SectionTitle
           eyebrow="KONTAK"
           title="Mari terhubung."
-          description="Jangan ragu untuk menghubungi saya untuk peluang kerja, kolaborasi, atau sekadar menyapa."
+          description="Terbuka untuk peluang kerja, kolaborasi proyek, atau sekadar berdiskusi.Mari terhubung melalui platform di bawah ini!"
         />
 
         <GlassCard className="p-8 md:p-12">
