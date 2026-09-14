@@ -94,7 +94,7 @@ export const projects = [
 
     },
 
-    image: "/projects/project-1/logo1.jpg",
+    image: "/projects/project-1/logo.jpg",
 
     technologies: [
       "Cloud",
