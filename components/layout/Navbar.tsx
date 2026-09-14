@@ -17,7 +17,18 @@ export default function Navbar() {
 
   return (
     <header className="fixed left-0 right-0 top-0 z-50 px-5 pt-5">
-      <nav className="mx-auto max-w-6xl rounded-full border border-white/40 bg-white/20 px-5 py-3 backdrop-blur-xl shadow-lg">
+      <nav
+        className={`
+          mx-auto max-w-6xl
+          border border-white/40
+          bg-white/20
+          px-5 py-3
+          backdrop-blur-xl
+          shadow-lg
+          md:rounded-full
+          ${open ? "rounded-3xl" : "rounded-full"}
+        `}
+      >
         <div className="flex items-center justify-between">
           <a
             href="#home"
@@ -47,17 +58,19 @@ export default function Navbar() {
         </div>
 
         {open && (
-          <div className="mt-4 flex flex-col gap-3 border-t border-white/30 pt-4 md:hidden">
-            {links.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                onClick={() => setOpen(false)}
-                className="rounded-xl px-3 py-2 text-sm text-slate-700 hover:bg-white/20"
-              >
-                {link.name}
-              </a>
-            ))}
+          <div className="mt-4 max-h-[70vh] overflow-y-auto border-t border-white/30 pt-4 md:hidden">
+            <div className="flex flex-col gap-3">
+              {links.map((link) => (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  onClick={() => setOpen(false)}
+                  className="rounded-xl px-3 py-2 text-sm text-slate-700 transition hover:bg-white/20"
+                >
+                  {link.name}
+                </a>
+              ))}
+            </div>
           </div>
         )}
       </nav>

@@ -250,7 +250,7 @@ export default async function ProjectPage({
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 rounded-full bg-slate-800 px-5 py-3 text-sm font-semibold text-white transition hover:bg-slate-700"
                     >
-                      Lihat Prototype
+                      {slug === "project-2" ? "Github" : "Lihat Prototype"}
                       <ExternalLink size={16} />
                     </a>
 

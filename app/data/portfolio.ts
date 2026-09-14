@@ -129,7 +129,7 @@ export const projects = [
         "/projects/project-2/revou4.png",
         "/projects/project-2/revou5.png",
       ],
-      link: "#",
+      link: "https://github.com/rizkiayuniandari/CodingCamp-17Nov2025-Msy-Rizkia-Yuniandari.git",
     },
 
     image: "/projects/project-2/revou1.png",
