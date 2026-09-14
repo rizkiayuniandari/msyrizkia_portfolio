@@ -330,9 +330,11 @@ export const hardSkills = [
   "Next.js",
   "React.js",
   "TypeScript",
-  "Python",
   "JavaScript",
+  "API",
+  "Python",
   "MySQL",
+  "Membuat Desain yang Responsif",
   "Microsoft Office",
 ];
 
@@ -342,6 +344,7 @@ export const softSkills = [
   "Kerja Sama Tim",
   "Ketelitian",
   "Kemampuan Beradaptasi",
+  "Problem Solving",
 ];
 
 export const languages = [
