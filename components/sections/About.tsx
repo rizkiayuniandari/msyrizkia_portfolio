@@ -7,7 +7,7 @@ import { about, personalInfo } from "@/app/data/portfolio";
 export default function About() {
   return (
     <section
-      id="about"
+      id="about" 
       className="relative overflow-hidden px-6 py-28"
     >
       <GradientOrb className="right-[-150px] top-[100px] h-[400px] w-[400px]" />
@@ -40,7 +40,8 @@ export default function About() {
             </div>
 
             <div className="flex h-full items-center">
-              <p className="text-lg leading-8 text-slate-600 md:text-xl">
+              {/* Menambahkan class text-justify */}
+              <p className="text-justify text-lg leading-8 text-slate-600 md:text-xl">
                 {about.description}
               </p>
             </div>
